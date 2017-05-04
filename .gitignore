@@ -40,3 +40,12 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Generated Files
+*.js
+*.map
+
+# Exluding these
+!src/systemjs.config.extras.js
+!src/systemjs.config.js
+!src/systemjs-angular-loader.js

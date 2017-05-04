@@ -6,6 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
+// Router component
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Heroes';
@@ -15,7 +16,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n        <h1>{{title}}</h1>\n        <my-heroes></my-heroes>\n    "
+        template: "\n        <h1>{{title}}</h1>\n        <nav>\n            <a routerLink='/dashboard'>Dashboard</a>\n            <a routerLink='/heroes'>Heroes</a>\n        </nav>\n        <router-outlet></router-outlet>\n    "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
